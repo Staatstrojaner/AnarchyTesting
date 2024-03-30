@@ -1,6 +1,4 @@
 name: automerge
-permissions:
-  contents: write
 on:
   pull_request:
 jobs:
@@ -13,6 +11,8 @@ jobs:
   automerge:
     needs: build
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Merge
         env:
