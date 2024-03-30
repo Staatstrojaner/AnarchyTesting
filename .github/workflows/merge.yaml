@@ -11,8 +11,7 @@ jobs:
   automerge:
     needs: build
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
+    permissions: write-all
     steps:
       - name: Merge
         env:
