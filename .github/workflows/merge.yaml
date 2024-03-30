@@ -10,10 +10,10 @@ on:
       - ready_for_review
       - reopened
       - unlocked
-  status: {}
 jobs:
   automerge:
-    runs-on: ubuntu-latest steps:
+    runs-on: ubuntu-latest
+    steps:
       - id: automerge
         name: automerge
         uses: "pascalgn/automerge-action@v0.16.2"
